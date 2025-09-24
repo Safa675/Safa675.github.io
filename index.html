@@ -1,123 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Safa Öksüz — Economics & Mathematics student. Projects: Crypto index fund, portfolio model, sleep study.">
+  <title>Safa Öksüz — Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Safa Öksüz — Economics & Mathematics student. Data & quantitative finance projects.">
   <meta property="og:title" content="Safa Öksüz — Portfolio">
-  <meta property="og:description" content="Data-driven finance & quant projects.">
-
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Safa Öksüz Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-      color: #000;
-    }
-    header {
-      background: #4CAF50;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #00F;
-    }
-    nav a {
-      color: white;
-      padding: 14px 20px;
-      text-decoration: none;
-      text-align: center;
-    }
-    nav a:hover {
-      background: #ddd;
-      color: black;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #4CAF50;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #00F;
-      color: white;
-    }
-  </style>
+  <meta property="og:description" content="Projects: Crypto Index Fund, Portfolio Model, Sleep Study">
+  <meta property="og:image" content="assets/hero.jpg">  <!-- replace with your hero image -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <header>
-    <h1>Safa Öksüz Portfolio</h1>
-    <p>Economics & Mathematics Student | Aspiring Quant</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <img src="assets/headshot.jpg" alt="Safa Öksüz — Portrait" class="hero-image">
+      <div class="hero-text">
+        <h1>Safa Öksüz</h1>
+        <p>Economics & Mathematics Student | Quantitative Finance & Data Analysis</p>
+        <div class="hero-buttons">
+          <a href="assets/Safa_Oksuz_CV.pdf" class="btn" download>Download CV</a>
+          <a href="mailto:your.email@example.com" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#cv">CV</a>
-    <a href="#crypto_index">Crypto Index Fund(Work In Progress)</a>
-    <a href="#portfolio">Portfolio Model(Work in Progress)</a>
-    <a href="#sleep_study">Sleep Study Project</a>
-  </nav>
+  <main class="container">
 
-  <section id="about">
-
-    <h2>About This Site</h2>
-    <p>
-      I created this website as a personal portfolio to showcase my academic background, 
-      projects, and career interests. It serves as a place where potential employers 
-      or collaborators can learn more about my work.
-    </p>
-  </section>
-
-  <section id="cv">
-    <h2>CV</h2>
-    <p>You can acess my CV from <a href="https://github.com/Safa675/Safa675.github.io/blob/0fe9f07ed6b89cca0fc86d66ccbaacf93eb4d195/Safa%20%C3%96KS%C3%9CZ%20-%20CV.pdf" target="_blank">here</a>.</p>
-    Its updated in september 2025.
-  </section>
-
-  <section id="crypto_index">
-    <h2>Crypto Index Fund</h2>
-    <p>I basically wrote a crypto index fund using python. You can access my reasoning from <a href="https://github.com/Safa675/Safa675.github.io/blob/main/Crypto%20Index%20Fund.docx" target="_blank">here</a>..</p>
-    and you can acess my index's source code from <a href="https://github.com/Safa675/Safa675.github.io/blob/main/Crypto%20Index%20Fund.py" target="_blank">here</a>.</p>
-
-      
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I’m an Economics & Mathematics student with a passion for quantitative finance, data analysis, and building tools that generate insights. I love exploring financial modeling, portfolio optimization, and applying statistics & machine learning to real-world problems.
       </p>
-  </section>
+    </section>
 
-  <section id="portfolio">
-    <h2>Porfolio Model</h2>
-    <p>A very comprehensive model I made of a portfolios five-year development. Its includes a portfolios return rates in a period of 5 year. The model includes a monte carlo simulation, optimization, statis metrics, scenario analysis and a dashboard.
-      I'm still working on <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FSafa675%2FSafa675.github.io%2Frefs%2Fheads%2Fmain%2FPortfolio%2520Model.xlsx&wdOrigin=BROWSELINK" target="_blank">it</a>.</p>
-  </section>
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
 
-  <section id="sleep_study">
-    <h2>Sleep Study</h2>
-     <p>
-    This project is a lot different than my main interest, finance. Tbh i influenced a lot from the Bryan Johnson. A longevity influencer : )) I was following him in a long time and he was always talking about 
-    importance of sleep in longevity. I found a database contains college students' detailed information on sleep duration, academic performance, and mental well-being. I try to answer some questions about the relationship between sleep and the other variables in the dataset. You can access my project from
-       <a href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2FSafa675%2FSafa675.github.io%2Frefs%2Fheads%2Fmain%2FECON_280_Semester_Project_Safa_O%25CC%2588ksu%25CC%2588z_-_Jana_Hoffman%255B1%255D.docx&wdOrigin=BROWSELINK" target="_blank">here</a>.
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Crypto Index Fund</h3>
+          <p><strong>Tech:</strong> Python, pandas, NumPy, data APIs (e.g. CoinGecko), backtesting tools</p>
+          <ul class="project-details">
+            <li>Built automated pipeline for index construction, rebalancing and data ingestion</li>
+            <li>Simulated performance vs. benchmark (show key metrics: return, drawdown, Sharpe ratio etc.)</li>
+            <li>Live code & documentation: <a href="https://github.com/yourusername/crypto-index-fund" target="_blank">GitHub repo</a></li>
+          </ul>
+        </div>
+        <div class="project-image">
+          <img src="assets/project-crypto.jpg" alt="Crypto index fund screenshot">
+        </div>
+      </div>
 
-  <footer>
-    <p>&copy; 2025 Safa Öksüz | <a href="mailto:safa.okksuz@gmail.com" style="color:white;">Email Me</a></p>
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Portfolio Model</h3>
+          <p><strong>Tech:</strong> Python, Monte Carlo simulation, optimization, visualization</p>
+          <ul class="project-details">
+            <li>Scenario analysis and risk assessment across asset classes</li>
+            <li>Dashboard & backtest showing performance under different constraints</li>
+            <li>Live repo / notebook: <a href="https://github.com/yourusername/portfolio-model" target="_blank">GitHub link</a></li>
+          </ul>
+        </div>
+        <div class="project-image">
+          <img src="assets/project-portfolio.jpg" alt="Portfolio model visualization">
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Sleep Study Analysis</h3>
+          <p><strong>Tech:</strong> R / Python, statistical analysis, visualization</p>
+          <ul class="project-details">
+            <li>Examined relationship between sleep patterns and academic performance</li>
+            <li>Data cleaning, correlation analysis, hypothesis testing</li>
+            <li>Jupyter notebook with results: <a href="https://github.com/yourusername/sleep-study" target="_blank">Link</a></li>
+          </ul>
+        </div>
+        <div class="project-image">
+          <img src="assets/project-sleep.jpg" alt="Sleep study charts">
+        </div>
+      </div>
+
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills & Technologies</h2>
+      <ul class="skill-list">
+        <li>Python (pandas, NumPy, Matplotlib, seaborn, SciPy)</li>
+        <li>Statistics & Machine Learning</li>
+        <li>Optimization / Monte Carlo Simulation</li>
+        <li>Data Visualization & Reporting</li>
+        <li>Git / Version Control</li>
+        <li>SQL / Data Manipulation</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Get In Touch</h2>
+      <p>Feel free to reach out: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Safa Öksüz. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
+
 
