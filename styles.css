@@ -30,16 +30,7 @@
 .hero-text .lead { font-size: 1.15rem; margin-bottom: 18px; opacity: 0.95; }
 .hero-buttons .btn + .btn { margin-left: 12px; }
 
-/* hero image block */
-.hero-media { display:flex; justify-content:flex-end; }
-.hero-image {
-  width: 320px;
-  height: 320px;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-  border: 4px solid rgba(255,255,255,0.06);
-}
+
 
 /* make main page wider too */
 .container {
@@ -52,7 +43,6 @@
 @media (max-width: 980px) {
   .hero-inner { grid-template-columns: 1fr; text-align: center; padding: 0 24px; }
   .hero-media { justify-content: center; margin-top: 18px; }
-  .hero-image { width: 220px; height: 220px; border-radius: 50%; }
   .hero-text h1 { font-size: 2.2rem; }
 }
 
