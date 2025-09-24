@@ -8,8 +8,8 @@ from binance.client import Client
 from binance.exceptions import BinanceAPIException
 
 # -------------------- CONFIG --------------------
-API_KEY = "vvOdeNuiijhTRN9PwYYit1fI3oC4TVRkWT2aMPGbTMrto68qAxVAyiVVe2qOiMtX"
-API_SECRET = "V4N8gn6h6o7YrvjUQXxIXcetAMzWK2YUarzLCpn0PYD5haXyLoW0KK5uEXyFhqOP"
+API_KEY = "Your API Key here"
+API_SECRET = "Your API Secret here"
 PORTFOLIO_USD_OVERRIDE = None
 EXECUTE_REAL = False
 REBALANCE_THRESHOLD = 0.02
@@ -167,3 +167,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
