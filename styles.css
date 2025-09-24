@@ -1,5 +1,32 @@
 /* ===== Full-width hero (place/replace at top of your CSS) ===== */
 :root { --site-max: 1400px; --pad-lg: 48px; --pad-sm: 20px; }
+.nav {
+  background: #fff; /* contrast background */
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+  padding: 14px 0;
+  margin-top: 24px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: #0077cc;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #004080;
+}
 
 .hero {
   width: 100%;
