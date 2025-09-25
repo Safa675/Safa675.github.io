@@ -1,18 +1,48 @@
-/* ===== Full-width hero (place/replace at top of your CSS) ===== */
 :root { --site-max: 1400px; --pad-lg: 48px; --pad-sm: 20px; }
-/* Navigation below hero — bigger, more readable */
+
+/* Hero */
+.hero {
+  width: 100%;
+  background: linear-gradient(135deg, #0077cc 0%, #004080 100%);
+  color: #fff;
+  padding: calc(var(--pad-lg) * 1.2) 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.hero-inner {
+  max-width: var(--site-max);
+  margin: 0 auto;
+  padding: 0 var(--pad-lg);
+  text-align: center; /* now centered, no image column */
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+.hero-text .lead {
+  font-size: 1.15rem;
+  margin-bottom: 1em;
+  opacity: 0.95;
+}
+.hero-buttons .btn + .btn { margin-left: 12px; }
+
+/* Navigation bar */
 .nav {
-  background-color: #fff; /* solid white across all links */
+  width: 100%;
+  background-color: #fff;
   box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
   padding: 20px 0;
-  margin-top: 24px;
-  z-index: 1000; /* makes sure it sits above sections */
+  margin-top: 0; /* sit directly below hero */
+  position: relative;
+  z-index: 1000;
 }
+
 .nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
-  gap: 48px;   /* more spacing between links */
+  justify-content: center; /* center links; use space-around to stretch */
+  gap: 64px; /* bigger spacing */
   margin: 0;
   padding: 0;
 }
@@ -21,71 +51,29 @@
   color: #0077cc;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;   /* slightly bigger spacing */
-  font-size: 1.15rem;    /* bigger text for readability */
+  letter-spacing: 1px;
+  font-size: 1.25rem;
   transition: color 0.3s ease;
-  padding: 8px 12px;     /* optional: clickable area bigger */
+  padding: 8px 12px;
 }
 
 .nav a:hover {
   color: #004080;
 }
 
-header + .nav {
-  margin-top: 24px; /* already in your CSS */
-  padding: 20px 0;
-}
-
-.nav {
-  width: 100%;
-  position: relative; /* or position: sticky; top:0; */
-  background-color: #fff;
-}
-
-.hero {
-  width: 100%;
-  background: linear-gradient(135deg, #0077cc 0%, #004080 100%);
-  color: #fff;
-  padding: calc(var(--pad-lg) * 1.2) 0;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-  /* ensure it sits full width even if other wrappers exist */
-  position: relative;
-  left: 0;
-  right: 0;
-}
-
-/* center content inside the full-width hero */
-.hero-inner {
-  max-width: var(--site-max);
-  margin: 0 auto;              /* keeps contents centered on large screens */
-  padding: 0 var(--pad-lg);
-  display: grid;
-  grid-template-columns: 1fr 340px; /* text left, image right */
-  gap: 36px;
-  align-items: center;
-}
-
-/* hero text */
-.hero-text { text-align: left; }
-.hero-text h1 { font-size: 3rem; margin: 0 0 8px; line-height: 1.02; }
-.hero-text .lead { font-size: 1.15rem; margin-bottom: 18px; opacity: 0.95; }
-.hero-buttons .btn + .btn { margin-left: 12px; }
-
-
-
-/* make main page wider too */
+/* Main content container */
 .container {
-  max-width: var(--site-max); /* bump this (1400px) or set to 100% if you want true full width */
+  max-width: var(--site-max);
   margin: 48px auto;
   padding: 0 40px;
 }
 
-/* responsive */
+/* Responsive */
 @media (max-width: 980px) {
-  .hero-inner { grid-template-columns: 1fr; text-align: center; padding: 0 24px; }
-  .hero-media { justify-content: center; margin-top: 18px; }
   .hero-text h1 { font-size: 2.2rem; }
+  .nav ul { flex-direction: column; gap: 16px; }
 }
+
 
 
 * {
