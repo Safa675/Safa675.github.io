@@ -1,9 +1,10 @@
 /* ===== Full-width hero (place/replace at top of your CSS) ===== */
 :root { --site-max: 1400px; --pad-lg: 48px; --pad-sm: 20px; }
+/* Navigation below hero — bigger, more readable */
 .nav {
-  background: #fff; /* contrast background */
+  background: #fff; 
   box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
-  padding: 14px 0;
+  padding: 20px 0; /* increased from 14px to 20px */
   margin-top: 24px;
 }
 
@@ -11,7 +12,7 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 32px;
+  gap: 48px;   /* more spacing between links */
   margin: 0;
   padding: 0;
 }
@@ -20,26 +21,16 @@
   color: #0077cc;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;   /* slightly bigger spacing */
+  font-size: 1.15rem;    /* bigger text for readability */
   transition: color 0.3s ease;
+  padding: 8px 12px;     /* optional: clickable area bigger */
 }
 
 .nav a:hover {
   color: #004080;
 }
 
-.nav ul {
-  list-style: none;            /* remove bullets */
-  display: flex;               /* arrange horizontally */
-  justify-content: center;     /* center the items */
-  gap: 32px;                   /* space between links */
-  margin: 0;
-  padding: 0;
-}
-
-.nav li {
-  display: inline;             /* fallback: ensures inline behavior */
-}
 
 
 .hero {
