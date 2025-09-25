@@ -31,7 +31,16 @@
   color: #004080;
 }
 
+header + .nav {
+  margin-top: 24px; /* already in your CSS */
+  padding: 20px 0;
+}
 
+.nav {
+  width: 100%;
+  position: relative; /* or position: sticky; top:0; */
+  background-color: #fff;
+}
 
 .hero {
   width: 100%;
