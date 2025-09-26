@@ -135,13 +135,19 @@ a:hover {
 .project-image, .project-info {
   flex: 1 1 300px;
 }
-.project-image img {
-  width: 100%;       /* makes the image fill its container */
-  max-width: 300px;  /* limits how big it can get */
-  height: auto;      /* keeps aspect ratio */
-  display: block;
-  margin: 0 auto;    /* centers the image */
+.project-image {
+  display: flex;          /* enables side-by-side layout */
+  gap: 10px;              /* space between images */
+  justify-content: center; /* optional: center them horizontally */
+  flex-wrap: wrap;        /* allows wrapping on small screens */
 }
+
+.project-image img {
+  max-width: 45%;         /* makes images smaller to fit side by side */
+  height: auto;           /* keeps aspect ratio */
+  display: block;
+}
+
 
 .project-info {
   padding: 20px;
