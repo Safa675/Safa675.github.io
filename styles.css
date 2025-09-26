@@ -2,8 +2,15 @@
   width: 100%;
   background: linear-gradient(135deg, #0077cc 0%, #004080 100%);
   color: #fff;
-  padding: calc(var(--pad-lg) * 1.2) 0;
+  /* remove top/bottom padding */
+  padding: 0;
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+
+  /* make hero tall and center content */
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center (works since child is flex column) */
+  min-height: 70vh;         /* fills 70% of viewport */
 }
 
 .hero-inner {
@@ -11,13 +18,10 @@
   margin: 0 auto;
   padding: 0 var(--pad-lg);
 
-  /* center contents */
   display: flex;
   flex-direction: column;
-  align-items: center;    /* horizontal centering */
-  justify-content: center;/* vertical centering */
-  text-align: center;     /* text centered */
-  min-height: 50vh;       /* makes hero at least half screen tall */
+  align-items: center;
+  text-align: center;
 }
 
 .hero-text h1 {
