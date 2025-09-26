@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;      /* vertical center */
   justify-content: center;  /* horizontal center */
-  min-height: 70vh;         /* make hero tall */
+  min-height: 40vh;         /* make hero tall */
   text-align: center;       /* center text */
 }
 
