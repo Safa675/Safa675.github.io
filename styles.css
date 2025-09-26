@@ -2,27 +2,21 @@
   width: 100%;
   background: linear-gradient(135deg, #0077cc 0%, #004080 100%);
   color: #fff;
-  /* remove top/bottom padding */
-  padding: 0;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
 
-  /* make hero tall and center content */
   display: flex;
   align-items: center;      /* vertical center */
-  justify-content: center;  /* horizontal center (works since child is flex column) */
-  min-height: 70vh;         /* fills 70% of viewport */
+  justify-content: center;  /* horizontal center */
+  min-height: 70vh;         /* make hero tall */
+  text-align: center;       /* center text */
 }
 
 .hero-inner {
   max-width: var(--site-max);
-  margin: 0 auto;
   padding: 0 var(--pad-lg);
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  /* no flex here — let parent handle centering */
 }
+
 
 .hero-text h1 {
   font-size: 3rem;
