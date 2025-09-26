@@ -1,48 +1,27 @@
-:root { --site-max: 1400px; --pad-lg: 48px; --pad-sm: 20px; }
-
 /* Hero */
 .hero {
   width: 100%;
   background: linear-gradient(135deg, #0077cc 0%, #004080 100%);
   color: #fff;
-  padding: calc(var(--pad-lg) * 1.2) 0;
+  padding: calc(var(--pad-lg) * 1.2) 0 0 0; /* remove bottom padding, let nav sit there */
   box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  position: relative;
 }
 
-.hero-inner {
-  max-width: var(--site-max);
-  margin: 0 auto;
-  padding: 0 var(--pad-lg);
-  text-align: center; /* now centered, no image column */
-}
-
-.hero-text h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5em;
-}
-.hero-text .lead {
-  font-size: 1.15rem;
-  margin-bottom: 1em;
-  opacity: 0.95;
-}
-.hero-buttons .btn + .btn { margin-left: 12px; }
-
-/* Navigation bar */
+/* Navigation bar inside hero */
 .nav {
   width: 100%;
   background-color: #fff;
-  box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
   padding: 20px 0;
-  margin-top: 0; /* sit directly below hero */
-  position: relative;
-  z-index: 1000;
+  margin-top: 32px; /* distance below hero text */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .nav ul {
   list-style: none;
   display: flex;
-  justify-content: center; /* center links; use space-around to stretch */
-  gap: 64px; /* bigger spacing */
+  justify-content: center;
+  gap: 64px;
   margin: 0;
   padding: 0;
 }
@@ -52,7 +31,7 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   transition: color 0.3s ease;
   padding: 8px 12px;
 }
