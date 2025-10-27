@@ -141,14 +141,14 @@ a:hover {
 
 /* For single-image projects */
 .project-image.single {
-  flex: 1 1 80%;  /* full width of the card */
+  flex: 1 1 20%;  /* full width of the card */
 }
 
 .project-image.double {
-  flex: 1 1 40%;   /* 60% width for two images side by side */
+  flex: 1 1 5%;   /* 60% width for two images side by side */
 }
 .project-info {
-  flex: 1 1 40%;   /* remaining width for info */
+  flex: 1 1 5%;   /* remaining width for info */
 }
 
 .project-info h3 {
