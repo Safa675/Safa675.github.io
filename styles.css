@@ -146,19 +146,17 @@ body {
 }
 
 .project-image.single img {
-  max-width: 85%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
+  max-width: 80%;
+
 }
 
 /* Double images side by side */
 .project-image.double {
-  flex: 1 1 60%;   /* takes 60% of card width */
+  flex: 1 1 50%;   /* takes 60% of card width */
 }
 
 .project-image.double img {
-  max-width: 48%;   /* two images side by side with gap */
+  max-width: 25%;   /* two images side by side with gap */
   height: auto;
   display: block;
   border-radius: 8px;
