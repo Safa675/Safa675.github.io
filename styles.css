@@ -100,7 +100,7 @@ body {
 
 /* ===== Main container ===== */
 .container {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 48px auto;
   padding: 0 20px;
 }
@@ -142,11 +142,11 @@ body {
 
 /* Single image large */
 .project-image.single {
-  flex: 1 1 100%;   /* full width */
+  flex: 1 1 80%;   /* full width */
 }
 
 .project-image.single img {
-  max-width: 95%;
+  max-width: 85%;
   height: auto;
   display: block;
   border-radius: 8px;
@@ -226,7 +226,7 @@ body {
     flex-direction: column;   /* stack project info & images */
   }
   .project-image.double img {
-    max-width: 100%;          /* stack double images vertically */
+    max-width: 10%;          /* stack double images vertically */
   }
 }
 
