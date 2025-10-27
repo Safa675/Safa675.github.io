@@ -140,23 +140,17 @@ a:hover {
 }
 
 /* For single-image projects */
-.project-image.single img {
-  max-width: 95%;   /* bigger image since it’s alone */
+.project-image.single {
+  flex: 1 1 100%;  /* full width of the card */
 }
 
-/* For two-image (double) projects */
-.project-image.double img {
-  max-width: 45%;   /* side by side */
-  height: auto;
-  display: block;
+.project-image.double {
+  flex: 1 1 60%;   /* 60% width for two images side by side */
 }
-
-
-
-
 .project-info {
-  padding: 20px;
+  flex: 1 1 40%;   /* remaining width for info */
 }
+
 .project-info h3 {
   margin-top: 0;
 }
