@@ -141,7 +141,7 @@ a:hover {
 
 /* For single-image projects */
 .project-image.single img {
-  max-width: 100%;   /* bigger image since it’s alone */
+  max-width: 95%;   /* bigger image since it’s alone */
 }
 
 /* For two-image (double) projects */
