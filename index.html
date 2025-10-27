@@ -1,128 +1,232 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Safa Öksüz — Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Safa Öksüz — Economics & Mathematics student. Quantitative finance projects.">
-  <meta property="og:title" content="Safa Öksüz — Portfolio">
-  <meta property="og:description" content="Projects: Crypto Index Fund, Portfolio Model">
-  <meta property="og:image" content="assets/hero.jpg">  <!-- replace with your hero image -->
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+/* ===== Reset & Basics ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- put this above <main class="container"> -->
-<header class="hero">
-  <div class="hero-inner">
-    <div class="hero-text">
-      <h1>Safa Öksüz</h1>
-      <p class="lead">Econ & Math Student • Aspiring Quant</p>
-      <div class="hero-buttons">
-        <a href="https://Safa675.github.io/Safa Öksüz CV.pdf" class="btn">CV</a>
-        <a href="#contact" class="btn btn-outline">Contact</a>
-      </div>
-    </div>
-  </div>
-</header>
+html {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-<!-- white nav starts AFTER hero -->
-<nav class="nav">
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+body {
+  background-color: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
 
+/* ===== Hero ===== */
+.hero {
+  width: 100%;
+  background: linear-gradient(135deg, #0077cc 0%, #004080 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  text-align: center;
+}
 
+.hero-inner {
+  max-width: 1200px;
+  padding: 0 20px;
+}
 
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
 
-  <main class="container">
+.hero-text .lead {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+  opacity: 0.95;
+}
 
-    <section id="about" class="about">
-      <h2>About Me</h2>
-      <p>
-        I’m a junior Econ & Math student with a passion for quantitative finance. I love exploring financial modeling, portfolio optimization, and applying statistics & machine learning to finance.
-      </p>
-    </section>
+/* ===== Buttons ===== */
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.4em;
+  border-radius: 4px;
+  background-color: #0077cc;
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #005fa3;
+}
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #0077cc;
+  color: #0077cc;
+}
+.btn-outline:hover {
+  background-color: #0077cc;
+  color: white;
+}
 
-    <section id="projects" class="projects">
-      <h2>Projects</h2>
+/* ===== Navigation ===== */
+.nav {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 20px 0;
+  z-index: 1000;
+}
 
-<!-- Single-image project -->
-<div class="project-card">
-  <div class="project-info">
-    <h3>
-      Crypto Index Fund 
-      (<a href="https://Safa675.github.io/Crypto Index Fund.py" target="_blank">Project</a>)
-    </h3>
-    <p><strong>Tech:</strong> Python, pandas, NumPy, data APIs (CoinGecko), Binance API, backtesting tools</p>
-    <ul class="project-details">
-      <li>Automated strategy that builds and rebalances a portfolio of the top N cryptocurrencies by market cap (excluding stablecoins).</li>
-      <li>Fetches live data from CoinGecko, checks Binance availability, and allocates portfolio in USDT.</li>
-      <li>Monitors balances and executes market buy/sell orders when deviation exceeds threshold, respecting Binance’s LOT_SIZE and MIN_NOTIONAL rules.</li>
-    </ul>
-  </div>
-  <div class="project-image single"> <!-- add 'single' here -->
-    <img src="https://raw.githubusercontent.com/Safa675/Safa675.github.io/refs/heads/main/Screenshot%202025-09-26%20075327.png" alt="Crypto index fund screenshot 1">
-  </div>
-</div>
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
 
-<!-- Double-image project -->
-<div class="project-card">
-  <div class="project-info">
-    <h3>
-      Portfolio Model 
-      (<a href="https://Safa675.github.io/Portfolio Model.xlsx" target="_blank">Model</a>, 
-      <a href="https://Safa675.github.io/get_stock_data.py" target="_blank">Fetch Script</a>)
-    </h3>
-    <p><strong>Tech:</strong> Excel, yfinance, Monte Carlo simulation, optimization, visualization</p>
-    <ul class="project-details">
-      <li>An extremely detailed portfolio analysis with optimization, risk metrics and monte carlo simulations</li>
-      <li>Dashboard & backtest showing performance under different constraints</li>
-    </ul>
-  </div>
-  <div class="project-image double"> <!-- add 'double' here -->
-    <img src="https://raw.githubusercontent.com/Safa675/Safa675.github.io/refs/heads/main/Screenshot%202025-09-26%20083140.png" alt="Portfolio screenshot 1">
-    <img src="https://raw.githubusercontent.com/Safa675/Safa675.github.io/refs/heads/main/Screenshot%202025-09-26%20083214.png" alt="Portfolio screenshot 2">
-  </div>
-</div>
+.nav a {
+  color: #0077cc;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  padding: 8px 12px;
+}
+.nav a:hover {
+  color: #004080;
+}
 
+/* ===== Main container ===== */
+.container {
+  max-width: 1200px;
+  margin: 48px auto;
+  padding: 0 20px;
+}
 
+/* ===== Projects ===== */
+.projects .project-card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 1px 8px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
 
-    </section>
+/* Project Info */
+.project-info {
+  flex: 1 1 400px;  /* allow info to grow/shrink */
+  padding: 20px;
+}
 
-    <section id="skills" class="skills">
-      <h2>Skills & Technologies</h2>
-      <ul class="skill-list">
-        <li>Python (pandas, NumPy, Matplotlib, seaborn)</li>
-        <li>Statistics</li>
-        <li>Optimization / Monte Carlo Simulation</li>
-        <li>Data Visualization & Reporting</li>
-        <li>Git / Version Control</li>
-        <li>SQL / Data Manipulation</li>
-        <li>VBA</li>
-      </ul>
-    </section>
+.project-info h3 {
+  margin-bottom: 10px;
+}
 
-    <section id="contact" class="contact">
-      <h2>Get In Touch</h2>
-      <p>Feel free to reach out: <a href="safa.okksuz@gmail.com">safa.okksuz@gmail.com</a></p>
-      <div class="social-links">
-        <a href="https://github.com/Safa675" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/safa-%C3%B6-2b094327b/" target="_blank">LinkedIn</a>
-      </div>
-    </section>
+.project-details {
+  margin-top: 10px;
+  list-style: disc;
+  padding-left: 20px;
+}
 
-  </main>
+/* Project Images */
+.project-image {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  <footer class="footer">
-    <p>© 2025 Safa Öksüz. All rights reserved.</p>
-  </footer>
+/* Single image large */
+.project-image.single {
+  flex: 1 1 100%;   /* full width */
+}
 
-</body>
-</html>
+.project-image.single img {
+  max-width: 95%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
 
+/* Double images side by side */
+.project-image.double {
+  flex: 1 1 60%;   /* takes 60% of card width */
+}
+
+.project-image.double img {
+  max-width: 48%;   /* two images side by side with gap */
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* ===== Skills ===== */
+.skills {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 8px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 10px;
+}
+
+.skill-list li {
+  background-color: #e8f1fb;
+  color: #0077cc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+
+/* ===== Contact ===== */
+.contact {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  font-weight: bold;
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #ffffff;
+  color: #777;
+  font-size: 0.85em;
+  border-top: 1px solid #e1e1e1;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 980px) {
+  .hero-text h1 { font-size: 2.2rem; }
+  .nav ul { flex-direction: column; gap: 16px; }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column;   /* stack project info & images */
+  }
+  .project-image.double img {
+    max-width: 100%;          /* stack double images vertically */
+  }
+}
 
