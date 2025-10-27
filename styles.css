@@ -132,20 +132,25 @@ a:hover {
   overflow: hidden;
   box-shadow: 0px 1px 8px rgba(0,0,0,0.1);
 }
-.project-image, .project-info {
-  flex: 1 1 300px;
-}
 .project-image {
-  display: flex;          /* enables side-by-side layout */
-  gap: 10px;              /* space between images */
-  justify-content: center; /* optional: center them horizontally */
-  flex-wrap: wrap;        /* allows wrapping on small screens */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.project-image img {
-  max-width: 45%;         /* makes images smaller to fit side by side */
-  height: auto;           /* keeps aspect ratio */
+/* For single-image projects */
+.project-image.single img {
+  max-width: 90%;   /* bigger image since it’s alone */
+}
+
+/* For two-image (double) projects */
+.project-image.double img {
+  max-width: 45%;   /* side by side */
+  height: auto;
   display: block;
+}
+
 }
 
 
